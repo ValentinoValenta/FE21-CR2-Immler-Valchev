@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+  margin: 0px;
+  background-color: tomato;
+}
+
+/* -----Header----- */
+
+/* header{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:center;
+    padding:30px 10%;
+} */
+
+
+
+/* -----Navigation Menu----*/
+
+.boxHeader{
+  flex-direction: column;
+}
+
+.boxLogos{
+    padding-top: 30px;
+    padding-bottom: 30px;
+ display:flex;
+ flex-direction: row;
+ justify-content: space-around;
+   }
+
+  .boxNavi{
+      display:flex;
+      flex-direction: start;
+      background-color: black;
+      
+      
+  }
+
+.nav_links li{
+    /* display: inline-block; */
+    list-style-type: none;
+    padding: 15px 5px;
+    font-size:16px;
+    margin-right: auto;
+    float: left;
+    background-color: black;
+}
+
+.nav_links li a{
+    text-decoration: none;
+    background-color: black;
+}
+
+ul, a{
+   font-family: "Montserrat", sans-serif;
+   font-weight:500;
+   font-size: 16px;
+   color:whitesmoke;
+}
+
+ul li{
+    margin: px;
+}
+
+.mainox{
+    flex-direction: column;
+  }
+
+
+
+
+
+
+/* ----First Section----*/
+.headingOne{
+    background-color:tomato;
+    height: 25%;
+    width: 10px;
+    border-bottom:  1px;
+}
+
+.newsContainerWrapper{
+    display:flex;
+    flex-direction:start;
+    align-items:
+    /* align-content:space-between; */
+}
+
+
+         
+
+
+
+
+.headingTwo{
+    background-color: grey;
+    height: 50%px;
+    width: 70%;
+}
+
+/* Footer */
+
+
+
+
+
+
+/* -------Media Query------- */
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .banner-1 {
+      display:none;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body {
+    background-color: green;
+  }
+}
