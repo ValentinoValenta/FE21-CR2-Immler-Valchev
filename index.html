@@ -5,24 +5,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Main CSS file link -->
     <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- Article stylesheet link added Article menu  -->
     <link rel="stylesheet" href="styles/article.css" />
-
     <title>Code Review II | Valentin Immler-Valchev</title>
      <!-- Date with JavaScript -->
-     <script type="text/javascript" src="setTime.js"></script>
+     <script type="text/javascript" src="setDate.js"></script>
      
 </head>
 
 <body>
-    <!-- Header Containing the two Photos -->
+    <!-- Box Header Containing the two Photos and the Navigation menu -->
     <header>
-        <div class="boxHeader">
+        <div class="boxHeader"> 
         <div class="boxLogos">
             <div><img class="logo" src="img/logo-newspaper-cf.png" alt="logo"></div>
             <div><img class="banner-1" src="img/banner-1.png" alt="banner"></div>
         </div>
-        <!-- Navigation  -->
+        <!-- Navigation Menu -->
             <div class="boxNavi">
                 <nav>
                     <ul class="nav_links">
@@ -35,32 +36,118 @@
                 </nav></div>
           </div>
     </header>
-    
-    <p id="date" style="float: right; padding-right: 30px;"></p>
+    <!-- Added Date/Time with the help of JavaScript <script> tags below the main body element-->
+    <p id="date"></p>
+    <!-- Line Break -->
     <br>
     <br>
-    <main style="position: absolute; left: 10%; right: 10%;">
+    <main>
+        <!-- Main Box Container -->
         <div class="mainBox">
-            <h1 style="background-color: grey; padding-left: 20px;">Top News</h1>
+            <!-- Header Top News -->
+            <h1>Top News</h1>
         </div>
-        
+        <!-- Wrap Photo Container -->
         <div class="mainBoxNews">
+            <!-- Each Image and text wrapper in a separate container in.o. to ease control of the flex of the flexbox -->
             <div class="boxImage">
               <img class="bezos" src="img/jeff.png" />
-              <div class="imageText"><p>Lex Luthor or the boy next door</p></div>
+              <div class="imageText"><p>Jeff, bring me a beer-no, "please" needed</p></div>
             </div>
+            <!-- Each Image and text wrapper in a separate container -->
             <div class="boxImage">
               <img class="doorlock" src="img/eu.png" />
               <div class="imageText"><p>10 ways to keep your files safe</p></div>
             </div>
+            <!-- Each Image and text wrapper in a separate container -->
             <div class="boxImage">
               <img class="spotify" src="img/phone.png" />
-              <div class="imageText"><p>Spotify rises limit of offline songs</p></div>
+              <div class="imageText"><p>With Spotify, people don't get it until they try it. Then they tell their friends.</p></div>
             </div>
           </div>
-                 
+               <!-- The "Popular" Container -->
+        <div class="mainBox">
+            <h1>Popular</h1>
+        </div>
+        <!-- Images from the "Popular" container-->
+        <div class="mainBoxNews">
+            <div class="boxImage">           
+                <img class="iphone" src="img/iphone.png"/>
+                <div class=imageText><p>Zero reasons to avoid purchasing an Iphone</p></div>
+            </div>
+            <div class="boxImage">  
+                <img class="headphones" src="img/one.png"/>
+                <div class="imageText"><p>Sport and fun solar-powered earpuds</p></div>
+            </div>
+            <div class="boxImage">
+                <img class="elon" src="img/musk.jpg" />
+                <div class="imageText"><p>Is he Inhaling? No!</p></div>
+            </div>
+       </div>
+
+       <br><br>
+       <!-- Header Banner "How to become a developer" with the Code Factory link-->
+       <div class="mainBox">
+        <div><a href="https://codefactory.wien/en/home-en/"><img class="banner-3" src="img/banner-3.png" alt="banner-3"></a>
+        </div>
+        <!-- Box Images How to become a developer banner -->
+        <div class="boxImagesDeveloper">
+            <!-- Photos under the mainBox banner upper section -->
+            <div class="boxDevImages">
+                <div class="boxDevImage">           
+                    <img src="img/polar.png"/>
+                    <div class=imageText><p>Cool smart watch section</p></div>
+                </div>
+                <div class="boxDevImage">  
+                    <img src="img/nasa.png"/>
+                    <div class="imageText"><p>Honey, if you need space, join NASA</p></div>
+                </div>
+            </div>
+        </div>
+        <!-- Second section Photos container -->
+        <div class="boxImagesDeveloper">
+            <!-- Photos under the mainBox banner down section -->
+        <div class="boxImagesDeveloper">
+            <div class="boxDevImages">
+                <div class="boxDevImage">           
+                    <img src="img/smart.png"/>
+                    <div class=imageText><p>All the reasons to avoid purchasing a socket</p></div>
+                </div>
+                <div class="boxDevImage">  
+                    <img src="img/snowden.jpg"/>
+                    <div class="imageText"><p>Ed Snowden is safe in mother Russia</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- Footer Finishing works -->
+    <footer>
+        <div class="boxFooter"> 
+        <div class="boxFooter1">
+            <div class="boxFooterNavi">
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Tech</a></li>
+                        <li><a href="#">Culture</a></li>
+                        <li><a href="#">Video</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="logoNavi">
+                <div><img class="logo" src="img/logo-newspaper-cf.png" alt="logo"></div>
+            </div>
+          </div>
+          <div class= "boxFooter2">
+            <p><strong>Valentin Immler-Valchev</strong></p>
+          </div>
+        </div>
+        
+    </footer>
+<!-- ---------------------------First Try ---------------------------->
+
             <!-- Footer -->
-            <div class="footer">
+            <!-- <div class="footer">
                 <div class="footerNavi">
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -68,16 +155,19 @@
                         <li><a href="#">Culture</a></li>
                         <li><a href="#">Video</a></li>
                     </ul>
-              </div>    
+              </div>     -->
+
+
    </main> 
 
 </body>
+   <!-- Date Setting Java Script  -->
     <script>
     var n =  new Date();
     y = n.getFullYear();
     m = n.getMonth() + 1;
     d = n.getDate();
-    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+    document.getElementById("date").innerHTML = d + "." + m + "." + y;
      </script>
 
 </html>
