@@ -1,23 +1,59 @@
+/* ---- Main Box Wrap Container--*/
 .mainBoxNews{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
+/* h1 */
+h1{
+   background-color: grey; 
+   padding-left: 20px;
+}
+/* Box Image stylizaation*/
 .boxImage{
     text-align: center;
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
 }
-
+/* MainBox Images Setting the Size of the image */
 .mainBoxNews img{
     width: 250px;
     height: 250px;
 }
-
-.boxImage{
+/* Adjusting the text to image position */
+.boxImage .imageText{
+    position: absolute;
+    /* z-index: 999;  */
+    margin: 0 auto;
+    left: 0;
+    right: 0;        
+    text-align: center;
+    bottom: 1%; /* Adjust this value to move the positioned div up and down */
+    background: rgba(0, 0, 0, 0.8);
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 100%; /* Set the width of the positioned div */
+}
+/* Photos section under the mainBox banner down section */
+/* Setting the flex position and adjustments*/
+.boxDevImages{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* Image setting  */
+.boxDevImages img{
+    width: 300px;
+    height: 350px;
+}
+/*  */
+.boxDevImage{
+    text-align: center;
     position: relative;
     display: inline-block; /* Make the width of box same as image */
 }
-.boxImage .imageText{
+/* Image and text align stylization */
+.boxDevImage .imageText{
     position: absolute;
     z-index: 999;
     margin: 0 auto;
@@ -29,8 +65,8 @@
     font-family: Arial,sans-serif;
     color: #fff;
     width: 100%; /* Set the width of the positioned div */
-
 }
+
 
 /* -------Media Query------- */
 
@@ -40,12 +76,19 @@
         /* display:flex; */
         flex-direction: column;
     }
-
+    /* Setting the images to mobile responsiveness */
+    .boxDevImages{
+        flex-direction: column;
+      }
+      
+      .boxDevImages{
+        flex-direction: column;
+      }
     /* .boxImage .imageText{
         font-size: 30px;
     } */
 
-
+     /* Targeting both the text and the Image for mobile phone previews */
     .boxImage .imageText{
         
         width: 150px; /* Set the width of the positioned div */
